@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #323b8d;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    grid-column: 2 / 3;
+}
+
+#busqueda {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    grid-column: 3 / 4;
+    justify-self: end;
+}
+
+#grilla {
+    margin: 20px;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.fila-interno {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
